@@ -1,0 +1,307 @@
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+#navbarGrid {
+  position:absolute;
+  top: 0px;
+  left: -5%;
+}
+
+#container {
+  position:absolute;
+  top: 12%;
+  left: 10%;
+  height: 80%;
+  width: 100%;
+ /* border: 1px solid black;*/
+}
+
+#td_img{
+  height: 50px;
+  width: 50px;
+  /*text-align:center;*/
+}
+
+#th_title{
+  height: 50px;
+  width: 270px;
+  align: center;
+}
+
+#th_cover{
+  height: 50px;
+  width: 70px;
+}
+
+#th_author{
+  height: 50px;
+  width: 150px;
+  align: center;
+}
+
+#th_admin{
+  height: 50px;
+  width: 70px;
+}
+
+#th_date{
+  height: 50px;
+  width: 110px;
+}
+
+#th_checkout{
+  height: 50px;
+  width: 120px;
+}
+
+th {
+  background-color: #86a0c5;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  height: 50px;
+  width: 250px;
+}
+
+.available {
+  font-weight: normal;
+  color: #6e86c5;
+}
+
+.not_available {
+  font-weight: normal;
+  color: #c53340;
+}
+
+tr {
+  text-align: left;
+  padding: 10px;
+  height: 5px;
+  width: 50px;
+}
+
+img{
+  width:60px;
+  max-width:60px;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  height: 5px;
+  width: 50px;
+}
+
+input[required], select[required] {
+  background-image: url('asterisk.gif');
+  background-repeat: no-repeat;
+  background-position:right;
+}
+
+.asterisk_input:after {
+  content:" *";
+  color: #e32;
+  position: absolute;
+  margin: 0px 0px 0px -20px;
+  font-size: xx-large;
+  padding: 0 5px 0 0; }
+
+.text_field{
+  width: 400px;
+  height:30px;
+}
+
+.qr_text_field{
+  width: 325px;
+  height:30px;
+}
+
+.table_button {
+  display: block;
+  width: 150px;
+  height: 25px;
+  background: #F5C831;
+  padding: 2.5px;
+  text-align: center;
+  border-radius: 0px;
+  color: #666;
+  font-weight: bold;
+}
+
+.list_line_even {
+  text-align: left;
+  padding: 0px;
+  height: 50px;
+  width: 250px;
+  background: #CCC;
+}
+
+.list_line_odd {
+  text-align: left;
+  padding: 0px;
+  height: 50px;
+  width: 250px;
+  background: #FFF;
+}
+
+.linkText{
+  color:#666;
+  font-weight: bold;
+  height: 50px;
+  width: 50px;
+}
+
+#first_page {
+  position:absolute;
+  height:700px;
+  width:700px;
+  top:10%;
+  left:10%;
+  max-height:100%;
+  margin:auto;
+  display:block;
+}
+
+#clear_button {
+  position:absolute;
+  top:-276px;
+  left:-30px;
+}
+
+#cancel_button {
+  position:absolute;
+  top:-276px;
+  left:100px;
+}
+
+#scan_button {
+  position:absolute;
+  top:500px;
+  left:0px;
+}
+
+#return_button {
+  position:absolute;
+  top:600px;
+  left:10%;
+}
+
+#scan_button1 {
+  position:absolute;
+  top:600px;
+  left:10%;
+}
+
+#scan_button2 {
+  position:absolute;
+  top:600px;
+  left:16.5%;
+}
+
+#scan_button5 {
+  position:absolute;
+  top:630px;
+  left:170px;
+}
+
+#scan_button6 {
+  position:absolute;
+  top:700px;
+  left:170px;
+}
+
+#qr_button1{
+  position:absolute;
+  top:20%;
+  left:0%;
+}
+
+#qr_button2{
+  position:absolute;
+  top:20%;
+  left:7%;
+}
+
+#qr_button3 {
+  position:absolute;
+  top:700px;
+  left: 10%;
+}
+
+#qr_button4 {
+  position:absolute;
+  top:700px;
+  left:17%
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #fff;
+
+  &:visited {
+    color: #666;
+    background-color: #E8D694;
+  }
+
+  &:hover {
+    color: #666;
+    background-color: #F5C831;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}

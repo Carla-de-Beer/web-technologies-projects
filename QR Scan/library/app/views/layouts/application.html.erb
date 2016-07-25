@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield(:title) %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<!-- Following Menu -->
+<div class="ui large top fixed hidden menu" style="left:10%">
+
+    <a href="<%= books_path %>" class="brand item">Epi QR Library</a>
+    <a href="<%= check_out_users_path %>"  class="active item">My Current Checkouts</a>
+    <a href="<%= scan_check_books_path %>" class="active item">QR Scan Checkout</a>
+    <% if current_user && current_user.is_admin? %>
+      <a href="<%= new_book_path %>"  class="active item">Add a New Book</a>
+    <% end %>
+
+</div>
+
+<%= yield %>
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+</body>
+</html>

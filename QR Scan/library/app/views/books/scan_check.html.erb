@@ -1,0 +1,18 @@
+<% content_for :title, 'QR Scan' %>
+
+<body>
+
+    <div id="container">
+      <h1>Scan the QR Code to Checkout</h1>
+      <br>
+    </div>
+
+  <div id="scan_button1" >
+      <%= button_to 'Submit Scan', confirmation_books_path, :class => 'ui button', :method => :get %>
+  </div>
+
+    <div id="scan_button2" >
+      <%= button_to 'Cancel Scan', books_path, :class => 'ui button', :method => :get %>
+    </div>
+
+</body>

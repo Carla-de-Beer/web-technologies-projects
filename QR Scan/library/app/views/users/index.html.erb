@@ -1,0 +1,55 @@
+<% content_for :title, 'User Data' %>
+
+<div id="container">
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Number</th>
+      <th>Email</th>
+      <th>Activated</th>
+      <th>Locked</th>
+      <th>Time zone</th>
+      <th>Locale</th>
+      <th>Office number</th>
+      <th>Mobile number</th>
+      <th>Title</th>
+      <th>Job title</th>
+      <th>Account number</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.first_name %></td>
+        <td><%= user.last_name %></td>
+        <td><%= user.number %></td>
+        <td><%= user.email %></td>
+        <td><%= user.activated %></td>
+        <td><%= user.locked %></td>
+        <td><%= user.time_zone %></td>
+        <td><%= user.locale %></td>
+        <td><%= user.office_number %></td>
+        <td><%= user.mobile_number %></td>
+        <td><%= user.title %></td>
+        <td><%= user.job_title %></td>
+        <td><%= user.account_number %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>
+</div>

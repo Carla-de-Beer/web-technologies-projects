@@ -1,0 +1,14 @@
+<% content_for :title, 'Checkout Confirmation' %>
+
+<body>
+  <div id="container">
+    <h1>Scan Confirmation</h1>
+    <br>
+    <h2>You have checked out the following item: </h2>
+  </div>
+
+  <div id="scan_button" >
+    <%= button_to 'Return to Catalogue Page', books_path, :class => 'ui button', :method => :get %>
+  </div>
+
+</body>
