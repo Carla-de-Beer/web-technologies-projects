@@ -1,0 +1,120 @@
+<dom-module id="polaroid-image">
+
+    <template>
+
+        <style>
+
+            #container {
+                position: absolute;
+                margin: 0 auto;
+                left: 30px;
+            }
+            #image ::content img {
+                width: 400px;
+                height: 400px;
+                border: 2px solid #ddd;
+                border-radius: 5px;
+                padding: 120px 50px 50px 50px;
+                box-shadow: 7px 7px 10px grey;
+                resize: vertical;
+                overflow: auto;
+            }
+            #first{
+                color: #109EFF;
+                font-family: "American Typewriter";
+                top:115px;
+                position: relative;
+                text-align: center;
+            }
+            #second{
+                color: #5FAAFF;
+                font-family: 'Arial';
+                top:118px;
+                position: relative;
+                text-align: center;
+            }
+            figcaption {
+                color: #5FAAFF;
+                font-family: 'Arial';
+                font-size: 13px;
+            }
+
+        </style>
+
+        <div id="container">
+
+            <div id="first">
+                <content select="h2" ></content>
+            </div>
+
+            <div id="second">
+                <content select="h3" ></content>
+            </div>
+
+            <div id="image" on-tap="changeImage">
+                <content select="img" id="picture"></content>
+            </div>
+
+        </div>
+
+    </template>
+
+        <script>
+
+            HTMLImports.whenReady(function () {
+
+                Polymer({
+                    is: 'polaroid-image',
+
+                    // This function makes use of information stored in the insertion point
+                    // Work in progress
+                    changeImage: function() {
+
+                        var distributed = this.getContentChildren('#picture');
+
+                        alert("Work in progress");
+
+                        //alert(distributed.length); // 1
+
+                        //var imageURL = distributed.src;
+
+                        var imageURL = this.$$('#picture').src;
+
+                        //alert(imageURL);
+
+                        var firstURL = "../images/dog1.jpg";
+                        var secondURL = "../images/dog2.jpg";
+                        var thirdURL = "../images/dog3.jpg";
+
+                        //var imageURL = document.getElementById("picture").src;
+
+                        if (imageURL === firstURL) {
+
+                            alert("Entered the selection statement block");
+                            document.getElementById("picture").src = secondURL;
+                            var x = document.getElementById("picture").complete;
+                            if (x){
+                                document.getElementById("second").innerHTML = "Image 2";
+                            }
+
+                        } else if (imageURL === secondURL){
+                            document.getElementById("picture").src = thirdURL;
+                            var y = document.getElementById("picture").complete;
+                            if (y) {
+                                document.getElementById("second").innerHTML = "Image 3";
+                            }
+                        }
+                        else if(imageURL === thirdURL) {
+                            document.getElementById("picture").src = firstURL;
+                            var z = document.getElementById("picture").complete;
+                            if (z) {
+                                document.getElementById("second").innerHTML = "Image 1";
+                            }
+                        }
+                    },
+                });
+            });
+
+        </script>
+
+</dom-module>

@@ -1,0 +1,61 @@
+<dom-module id="button-error">
+
+    <template>
+
+        <link rel="stylesheet" href="../fontAwesome/css/font-awesome.min.css">
+
+        <style>
+
+            .error {
+                width: 500px;
+                height: 55px;
+            }
+            .error .countDiv {
+                background-color: red;
+                border: 1px solid red;
+                color: white;
+            }
+            .error:hover .label {
+                border: 1px solid red;
+                border-left: none;
+            }
+
+        </style>
+
+        <div class="error">
+
+            <div class="countDiv" on-tap="incrementCount">
+                <span id="countError">0</span>
+            </div>
+
+            <div class="label">
+                <span class="fa fa-exclamation-circle"></span>
+                <span class="text">&nbsp;Error</span>
+            </div>
+        </div>
+
+    </template>
+
+        <script>
+
+            HTMLImports.whenReady(function () {
+
+                Polymer({
+                    is: 'button-error',
+
+                    incrementCount: function() {
+
+                        var val = document.getElementById("countError").innerHTML;
+                        var count = parseInt(val);
+
+                        count++;
+                        document.getElementById("countError").innerHTML = count.toString();
+                    },
+
+                } );
+
+            });
+
+        </script>
+
+</dom-module>

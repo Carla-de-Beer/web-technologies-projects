@@ -1,0 +1,101 @@
+h1 {
+  color: #8ac71b;
+}
+
+h2 {
+  color: slategray;
+  font-family: "Courier New";
+}
+
+div h2 {
+  color: #109EFF;
+  font-family: "Courier New";
+}
+
+h4 {
+
+  font-family: "Helvetica Neue";
+  color: slategray;
+  text-align: left;
+}
+
+h5 {
+
+  font-family: "Helvetica Neue";
+  color: #9e9e9e;
+  text-align: left;
+}
+
+#buttonDiv {
+
+  position:relative;
+  left: 7%;
+}
+
+#name1 {
+
+  position:relative;
+  left: -20%;
+}
+
+#name2 {
+
+  position:relative;
+  top:-190px;
+  left: 30%;
+}
+
+#dog1Div {
+
+  position:relative;
+  top:150%;
+  left: 50%;
+}
+
+#dog2Div {
+
+  position:relative;
+  top:150%;
+  left: 0%;
+}
+
+#image1 {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+#image2 {
+  position: absolute;
+  left: 650px;
+  top: 50px;
+}
+
+#buttons {
+  position: absolute;
+  top: 930px;
+  left:80px;
+}
+
+#header {
+  position: absolute;
+  left: 80px;
+  top: 800px;
+  color: slategray;
+}
+
+#header2 {
+  position: absolute;
+  left: 80px;
+  top: 840px;
+  color: slategray;
+}
+
+#document-element {
+  position: absolute;
+  left: 80px;
+  top: 1200px;
+  margin-bottom: 50px;
+}
+
+

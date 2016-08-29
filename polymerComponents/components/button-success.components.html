@@ -1,0 +1,61 @@
+<dom-module id="button-success">
+
+    <template>
+
+        <link rel="stylesheet" href="../fontAwesome/css/font-awesome.min.css">
+
+        <style>
+
+            .success {
+                width: 500px;
+                height: 55px;
+            }
+            .success .countDiv {
+                background-color: green;
+                border: 1px solid green;
+                color: white;
+            }
+            .success:hover .label {
+                border: 1px solid green;
+                border-left: none;
+            }
+
+        </style>
+
+        <div class="success">
+
+            <div class="countDiv" on-tap="incrementCount">
+                <span id="countSuccess">0</span>
+            </div>
+
+            <div class="label">
+                <span class="fa fa-smile-o"></span>
+                <span class="text">&nbsp;Success</span>
+            </div>
+        </div>
+
+    </template>
+
+    <script>
+
+        HTMLImports.whenReady(function () {
+
+            Polymer({
+                is: 'button-success',
+
+                incrementCount: function() {
+
+                    var val = document.getElementById("countSuccess").innerHTML;
+                    var count = parseInt(val);
+
+                    count++;
+                    document.getElementById("countSuccess").innerHTML = count.toString();
+                },
+
+            } );
+
+        });
+
+    </script>
+
+</dom-module>

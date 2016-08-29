@@ -1,0 +1,61 @@
+<dom-module id="button-neutral">
+
+    <template>
+
+        <link rel="stylesheet" href="../fontAwesome/css/font-awesome.min.css">
+
+        <style>
+
+            .neutral {
+                width: 500px;
+                height: 55px;
+            }
+            .neutral .countDiv {
+                background-color: darkgrey;
+                border: 1px solid darkgrey;
+                color: white;
+            }
+            .neutral:hover .label {
+                border: 1px solid darkgrey;
+                border-left: none;
+            }
+
+        </style>
+
+        <div class="neutral">
+
+            <div class="countDiv" on-tap="incrementCount">
+                <span id="countNeutral">0</span>
+            </div>
+
+            <div class="label">
+                <span class="fa fa-meh-o"></span>
+                <span class="text">&nbsp;Neutral</span>
+            </div>
+        </div>
+
+    </template>
+
+    <script>
+
+        HTMLImports.whenReady(function () {
+
+            Polymer({
+                is: 'button-neutral',
+
+                incrementCount: function() {
+
+                    var val = document.getElementById("countNeutral").innerHTML;
+                    var count = parseInt(val);
+
+                    count++;
+                    document.getElementById("countNeutral").innerHTML = count.toString();
+                },
+
+            } );
+
+        });
+
+    </script>
+
+</dom-module>
