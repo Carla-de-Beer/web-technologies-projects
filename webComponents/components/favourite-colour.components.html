@@ -1,0 +1,120 @@
+<!-- WebComponent example based off element-boilerplate: https://github.com/webcomponents/element-boilerplate -->
+<template>
+
+    <style>
+
+        .coloured {
+            color: red;
+            font-family: "Kannada MN";
+            font-size: 30px;
+        }
+
+        .container {
+            margin: 0 auto;
+            width:700px;
+            border: 1px dashed red;
+        }
+
+        .box {
+            color: red;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* THEME CODE */
+
+        .coloured.green{
+            color: #278b70;
+        }
+        .coloured.red {
+            color: #bc2751;
+        }
+        .coloured.blue {
+            color: #2d5ea3;
+        }
+        .coloured.gold {
+            color: #9a7b00;
+        }
+
+        .container.green{
+            margin: 0 auto;
+            width:700px;
+            border: 2px dotted #278b70;
+        }
+        .container.red {
+            margin: 0 auto;
+            width:700px;
+            border: 2px dotted #bc2751;
+        }
+        .container.blue {
+            margin: 0 auto;
+            width:700px;
+            border: 2px dotted #2d5ea3;
+        }
+        .container.gold {
+            margin: 0 auto;
+            width:700px;
+            border: 2px dotted #9a7b00;
+        }
+
+
+    </style>
+
+    <div class="container">
+        <p>My favourite colour is: <strong class="coloured"><content class="box" ></content></strong></p>
+    </div>
+
+
+</template>
+
+<script>
+
+    (function() {
+        // Creates an object based in the HTML Element prototype
+        var element = Object.create(HTMLElement.prototype);
+
+        // Gets content from <template>
+        var template = document.currentScript.ownerDocument.querySelector('template').content;
+
+        // Fires when an instance of the element is created
+        element.createdCallback = function() {
+            // Creates the shadow root
+            var shadowRoot = this.createShadowRoot();
+
+
+
+            // Adds a template clone into shadow root
+            var clone = document.importNode(template, true);
+            shadowRoot.appendChild(clone);
+
+            this.$coloured = this.shadowRoot.querySelector('.coloured');
+            this.$container = this.shadowRoot.querySelector('.container');
+
+        };
+
+        element.attributeChangedCallback = function(attrName, oldVal, newVal) {
+            switch (attrName) {
+                case "theme":
+                    this.updateTheme(newVal);
+                    break;
+            }
+        };
+
+        element.updateTheme = function(theme) {
+            var val = "green";
+            if (["green", "red", "blue", "gold"].indexOf(theme) > -1) {
+                val = theme;
+            }
+            this.$coloured.className = "coloured " + val;
+            this.$container.className = "container " + val;
+        };
+
+
+        document.registerElement('favourite-colour', {
+            prototype: element
+        });
+    }());
+
+</script>

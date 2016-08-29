@@ -1,0 +1,92 @@
+@import "buttonStyles";
+
+h1 {
+  color: slategray;
+}
+
+h2 {
+  color: slategray;
+  font-family: "Courier New";
+}
+
+.h2Div {
+  position: relative;
+  left: 50px;
+}
+
+div h2 {
+  color: #109EFF;
+  font-family: "Courier New";
+}
+
+h4, h5 {
+  font-family: "Helvetica Neue";
+  color: slategray;
+  position: relative;
+  left: 50px;
+}
+
+#buttonDiv {
+  position:relative;
+  left: 7%;
+}
+
+#x-foo-with-markup {
+  position:relative;
+  left: 50px;
+  color: #3167dc;
+  font-family: Chalkboard;
+  font-size: 20px;
+}
+
+#buttonDiv2 {
+  position:absolute;
+  left: 50px;
+  top: 2690px;
+  padding-bottom: 50px;
+}
+
+#buttonDiv3 {
+  position:absolute;
+  left: 50px;
+  top: 1820px;
+  padding-bottom: 50px;
+}
+
+#name1 {
+  position:relative;
+  left: -20%;
+}
+
+#name2 {
+  position:relative;
+  top:-190px;
+  left: 30%;
+}
+
+#nameTags {
+  position: relative;
+  top: 820px;
+}
+
+#dog1Div {
+  position:relative;
+  top: -30px;
+  left: 50px;
+}
+
+#dog2Div {
+  position:relative;
+  top: -30px;
+  left: 720px;
+}
+
+#image1 {
+  position: absolute;
+  left: 200px;
+}
+
+#image2 {
+  position: absolute;
+  left: 600px;
+}

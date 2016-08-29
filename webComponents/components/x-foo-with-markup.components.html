@@ -1,0 +1,11 @@
+<script>
+
+    var XFooProto = Object.create(HTMLElement.prototype);
+
+    XFooProto.createdCallback = function() {
+        this.innerHTML = "<b>I'm an x-foo-with-markup! No templates, no CSS. Just JS. Styled externally.</b>";
+    };
+
+    var XFoo = document.registerElement('x-foo-with-markup', {prototype: XFooProto});
+
+</script>

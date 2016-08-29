@@ -1,0 +1,96 @@
+<element name="my-tab">
+
+    <template>
+
+        <style>
+
+            #container {
+                position: absolute;
+                margin: 0 auto;
+            }
+            #image ::content img {
+                width: 400px;
+                height: 400px;
+                border: 2px solid #ddd;
+                border-radius: 5px;
+                padding: 120px 50px 50px 50px;
+                box-shadow: 7px 7px 10px grey;
+                resize: vertical;
+                overflow: auto;
+            }
+            #first{
+                color: #109EFF;
+                font-family: "American Typewriter";
+                top:115px;
+                position: relative;
+                text-align: center;
+            }
+            #second{
+                color: #5FAAFF;
+                font-family: 'Arial';
+                top:118px;
+                position: relative;
+                text-align: center;
+            }
+            figcaption {
+                color: #5FAAFF;
+                font-family: 'Arial';
+                font-size: 13px;
+            }
+            h3 {
+                color: #5FAAFF;
+                font-family: 'Arial';
+                top:118px;
+                position: relative;
+                text-align: center;
+            }
+
+        </style>
+
+
+        <div id="container">
+
+            <div id="first">
+                <content select="h2" ></content>
+            </div>
+
+            <div id="second">
+                <content select="h3" ></content>
+            </div>
+
+            <div id="image">
+                <figure>
+                <content select="img" id="pic"></content>
+                    <br><br><br>
+                <figcaption>Note: Change caption and filepath inside <i>index.html</i></figcaption>
+                </figure>
+            </div>
+
+        </div>
+
+    </template>
+
+</element>
+
+<script>
+
+    (function() {
+        // Creates an object based in the HTML Element prototype
+        var element = Object.create(HTMLElement.prototype);
+        // Gets content from <template>
+        var template = document.currentScript.ownerDocument.querySelector("template").content;
+        // Fires when an instance of the element is created
+        element.createdCallback = function() {
+            // Creates the shadow root
+            var shadowRoot = this.createShadowRoot();
+            // Adds a template clone into shadow root
+            var clone = document.importNode(template, true);
+            shadowRoot.appendChild(clone);
+        };
+        document.registerElement("my-tab", {
+            prototype: element
+        });
+    }());
+
+
+</script>

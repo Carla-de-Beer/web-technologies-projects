@@ -1,0 +1,22 @@
+<template>
+
+    <style>
+
+    </style>
+
+</template>
+
+
+<script>
+
+    var XFooButtonPrototype = Object.create(HTMLButtonElement.prototype);
+    XFooButtonPrototype.createdCallback = function() {
+        this.textContent = "Can't extend multiple elements!";
+    };
+
+    var XFooButton = document.registerElement('mega-button', {
+        prototype: XFooButtonPrototype,
+        extends: 'button'
+    });
+
+</script>
