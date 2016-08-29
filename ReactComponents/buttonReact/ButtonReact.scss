@@ -1,0 +1,35 @@
+$accent-color: #4db6ac;
+$state_success: green;
+$state_error: red;
+$state_neutral: rgb(169,169,169);
+
+$states:
+        'accent' $accent-color,
+        'error' $state_error,
+        'success' $state_success,
+        'neutral' $state_neutral;
+
+@mixin footer-button($states) {
+  .counter {
+    @each $i in $states {
+      &.#{nth($i, 1)} {
+        width: 257px;
+        height: 55px;
+      }
+
+      &.#{nth($i, 1)} .count {
+        background-color: nth($i, 2);
+        border: 1px solid nth($i, 2);
+        color: white;
+      }
+
+      &.#{nth($i, 1)}:hover .label {
+        border: 1px solid nth($i, 2);
+        border-left: none;
+      }
+    }
+  }
+}
+
+@include footer-button($states);
+

@@ -1,0 +1,58 @@
+h2, #imageFrame h2, #DRE h2, #react h2, #DRE h2 {
+  color: slategray;
+  font-family: "Courier New"; }
+
+h1 {
+  color: #8ac71b; }
+
+h4 {
+  color: lightslategrey; }
+
+div h2 {
+  color: mediumvioletred;
+  font-family: "Arial"; }
+
+#imageFrame {
+  position: relative;
+  top: 0px; }
+
+#react, #DRE {
+  position: relative;
+  top: 20px;
+  left: 80px;
+  width: 1000px;
+  border-bottom: solid 1px dimgrey;
+  margin-bottom: 40px;
+  padding-bottom: 25px; }
+
+.buttonBase, .button1 .btn, .button1 .btn:hover {
+  position: absolute;
+  top: 755px;
+  left: 85px;
+  margin-bottom: 35px; }
+
+.button1 .btn {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  background: slategray;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none; }
+
+.button1 .btn:hover {
+  background: slategray;
+  text-decoration: none;
+  border: none; }
+
+#footer {
+  position: absolute;
+  top: 755px;
+  left: 337px; }
+
+#block {
+  position: absolute;
+  top: 450px;
+  left: 325px; }
+
+/*# sourceMappingURL=style.css.map */

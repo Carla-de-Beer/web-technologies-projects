@@ -1,0 +1,41 @@
+.imageType, .imageType2, .imageType3  {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 120px 50px 50px 50px;
+  box-shadow: 7px 7px 10px grey;
+  resize: vertical;
+  overflow: auto;
+}
+
+.imageType:hover, .imageType2:hover, .imageType3:hover {
+
+  box-shadow: inset 0px 0px 5px 2px #5FAAFF;
+}
+
+#first .header, #first2 .header2, #first3 .header3  {
+  color: #109EFF;
+  font-family: "American Typewriter";
+  top: 115px;
+  position: relative;
+  text-align: center; }
+
+#second .subHeader, #second2 .subHeader2, #second3 .subHeader3 {
+  color: #5FAAFF;
+  font-family: 'Arial';
+  top: 118px;
+  position: relative;
+  text-align: center; }
+
+#container, #container3  {
+  position: absolute;
+  top: 0px;
+  left: 75px;
+  margin: 0 auto; }
+
+#container2 {
+  position: absolute;
+  top: 0px;
+  left: 680px;
+  margin: 0 auto; }

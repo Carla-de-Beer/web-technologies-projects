@@ -1,0 +1,42 @@
+.counter.accent {
+  width: 855px;
+  height: 55px; }
+.counter.accent .count {
+  background-color: #4db6ac;
+  border: 1px solid #4db6ac;
+  color: white; }
+.counter.accent:hover .label {
+  border: 1px solid #4db6ac;
+  border-left: none; }
+.counter.error {
+  width: 855px;
+  height: 55px; }
+.counter.error .count {
+  background-color: red;
+  border: 1px solid red;
+  color: white; }
+.counter.error:hover .label {
+  border: 1px solid red;
+  border-left: none; }
+.counter.success {
+  width: 855px;
+  height: 55px; }
+.counter.success .count {
+  background-color: green;
+  border: 1px solid green;
+  color: white; }
+.counter.success:hover .label {
+  border: 1px solid green;
+  border-left: none; }
+.counter.neutral {
+  width: 855px;
+  height: 55px; }
+.counter.neutral .count {
+  background-color: darkgray;
+  border: 1px solid darkgray;
+  color: white; }
+.counter.neutral:hover .label {
+  border: 1px solid darkgray;
+  border-left: none; }
+
+/*# sourceMappingURL=ButtonLong.css.map */
