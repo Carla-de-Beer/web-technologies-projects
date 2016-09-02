@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- ============================================================== -->
+    <!-- UI5 proxy servlet                                              -->
+    <!-- ============================================================== -->
+
+    <servlet>
+        <servlet-name>SimpleProxyServlet</servlet-name>
+        <servlet-class>com.sap.ui5.proxy.SimpleProxyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SimpleProxyServlet</servlet-name>
+        <url-pattern>/proxy/*</url-pattern>
+    </servlet-mapping>
+    <!-- force to use the remote location -->
+    <context-param>
+        <param-name>com.sap.ui5.resource.PREFER_REMOTE_LOCATION</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <!-- add the remote location for the UI5 libraries -->
+    <context-param>
+        <param-name>com.sap.ui5.proxy.REMOTE_LOCATION</param-name>
+        <param-value>http://services.odata.org</param-value>
+    </context-param>
+
+</web-app>
