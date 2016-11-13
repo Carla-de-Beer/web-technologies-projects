@@ -1,2 +1,2 @@
-# Web-development
-Various web development projects
+# Web Technologies
+Various web development projects using different types of web technologies
