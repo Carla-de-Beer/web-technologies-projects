@@ -1,0 +1,83 @@
+body {
+    font-family: "Verdana", sans-serif;
+    font-size: 12pt;
+    line-height: 1em;
+    color: rgb(30, 30, 30);
+    background: linear-gradient(rgb(75, 121, 161), rgb(40, 62, 81));
+}
+
+.header {
+    padding: 1em 2em 1em 2em;
+    background: linear-gradient(rgb(240, 240, 240), rgb(220, 220, 220));
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.header div {
+    display: inline-block;
+}
+
+.header .caption {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+#connection {
+    display: inline-block;
+    margin-left: 1em;
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+    background: rgb(230, 0, 0);
+    border: 2px solid rgba(220, 0, 0, 0.5);
+}
+
+#connection:after {
+    margin-left: 2em;
+    content: "Offline";
+}
+
+#connection.online {
+     background: rgb(0, 230, 0);
+     border: 2px solid rgba(0, 220, 0, 0.5);
+ }
+
+#connection.online:after {
+    content: "Online";
+}
+
+.panel {
+    width: 25em;
+    margin: 10em auto 0 auto;
+    background: rgb(250, 250, 250);
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 1em 1em 1em rgba(50, 50, 50, 0.2);
+}
+
+.panel img {
+    vertical-align: middle;
+}
+
+.content {
+    padding: 2em;
+    opacity: 0;
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 9pt;
+    }
+
+    .panel {
+        margin-top: 1em;
+    }
+}
+
+.content div {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 2em;
+}
+
+#arbitrage {
+    color: blue;
+}

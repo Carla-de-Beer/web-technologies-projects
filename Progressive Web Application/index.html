@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="scriptFiles/panel.js"></script>
+        <script type="text/javascript" src="scriptFiles/app.js"></script>
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+        <link rel="manifest" href="/manifest.json">
+        <title>Crypto Ninja</title>
+    </head>
+    <body>
+
+        <div class="panel">
+            <div class="header">
+                <image src="images/favicon_96.png"></image>
+                <span class="caption">
+                    Crypto Ninja
+                </span>
+                <div id="connection"></div>
+            </div>
+            <div class="content">
+                <image src="images/bitcoin.png"></image>
+                <div>
+                    <span id="btc_to_gbp"></span>
+                    <span id="arbitrage"></span>
+                    <br/>
+                    <span id="btc_to_usd"></span>
+                </div>
+                <br/>
+                <image src="images/usd.png"></image>
+                <span id="usd_to_gbp"></span>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            app.load();
+        </script>
+    </body>
+</html>

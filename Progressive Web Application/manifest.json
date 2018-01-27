@@ -1,0 +1,39 @@
+{
+  "short_name": "PWA_CN",
+  "name": "Crypto Ninja",
+  "icons": [
+    {
+      "src": "images/bitcoin.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/favicon.ico",
+      "type": "image/ico",
+      "sizes": "16x16"
+    },
+    {
+      "src": "images/favicon_148.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/favicon_96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/favicon_144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "images/usd.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    }
+  ],
+  "start_url": "index.html?launcher=true",
+  "display": "standalone",
+  "orientation": "landscape"
+}
