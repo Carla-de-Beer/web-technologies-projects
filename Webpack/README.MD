@@ -8,7 +8,7 @@ Two simple Webpack projects based on Maximillian Schwarzmüller's online Webpack
 * [*BASIC BABEL + SCSS WORKFLOW*](https://www.youtube.com/watch?v=8vnkM8JgjpU)
 * [*HTML + IMAGE LOADERS*](https://www.youtube.com/watch?v=CzLiXgRUt4g)
 
-The original Webpack 2 projects have been modified to work with Webpack 4.
+The original Webpack 2 projects were modified to work with Webpack 4.
 
 
 
