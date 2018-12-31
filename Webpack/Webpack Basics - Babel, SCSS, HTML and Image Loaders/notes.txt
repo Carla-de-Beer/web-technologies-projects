@@ -1,0 +1,5 @@
+- Don't need to add the JavaScript .js extention when importing a JS file because webpack alreday understands this.
+- The extention and leading underscore is omitted when importing SCSS files. SCSS knows how to handle the import!
+- The path variable is automatically included as part of npm.
+- __dirname is the variable to the absolute path of the current directory.
+- Add index.html to the src folder so that it may be included as part of bundle.js. Use the HTMLWebpackPlugin to tell webpack to use the index.html file as template.

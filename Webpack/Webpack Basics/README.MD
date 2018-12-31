@@ -1,4 +1,4 @@
-# Webpack 4 Basics: Essentials
+# Webpack 4 Basics
 
 A simple Webpack project based on Maximillian Schwarzmüller's online Webpack video tutorials called: 
 

@@ -6,7 +6,7 @@ module.exports = {
     entry: "./src/js/app.js",
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "main.js",
+        filename: "bundle.js",
         //publicPath: "/dist"
     },
     module: {
@@ -39,7 +39,7 @@ module.exports = {
                     options: {
                         name: "[name].[ext]",
                         outputPath: "img/",
-                        oublicPath: "img/"
+                        publicPath: "img/"
                     }
                 }]
             }
