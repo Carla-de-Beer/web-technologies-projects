@@ -1,0 +1,4 @@
+- The webpack dev server holds the dist/bundle.js information in memory.
+- The use property for rules allows the use of multiple loader. Reverse the order of the style loader and css loader because webpack executes the loaders in reverse order.
+- Loaders are applied on a per-file basis.
+- If you want to apply a transformation to all of the code, use a plug-in.

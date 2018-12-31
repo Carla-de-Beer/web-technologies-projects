@@ -8,9 +8,6 @@ A simple Webpack project based on Maximillian Schwarzmüller's online Webpack vi
 
 The original Webpack 2 project was modified to work with Webpack 4.
 
-
-
-
-
-
-
+Install the following npm packages:
+* `npm install --save-dev webpack webpack-dev-server webpack-cli` (webpack, webpack dev server + webpack cli)
+* `npm install --save-dev css-loader style-loader` (css and style loaders)
