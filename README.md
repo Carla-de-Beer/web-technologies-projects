@@ -11,7 +11,7 @@ The following is a list of the projects included in this repository:
 * [Progressive Web Application:](https://github.com/Carla-de-Beer/Web-Technologies/tree/master/Progressive%20Web%20Application) Progressive Web Application.
 * [React Components:](https://github.com/Carla-de-Beer/Web-Technologies/tree/master/React%20Components) React Components.
 * [RxJS:](https://github.com/Carla-de-Beer/Web-Technologies/tree/master/RxJS) RxJS examples.
-* [SAPUI5 Northwind Template:](https://github.com/Carla-de-Beer/Web-Technologies/tree/master/SAPUI5%20Northwind%20Template) A simple SAPUI5 project based on the Northwind OData service.
+* [SAPUI5 Northwind Template:](https://github.com/Carla-de-Beer/Web-Technologies/tree/master/SAPUI5%20Northwind%20template) A simple SAPUI5 project based on the Northwind OData service.
 * [Twitter Bot:](https://github.com/Carla-de-Beer/Web-Technologies/tree/master/Twitter%20Bot) Twitter Bot.
 * [Web Components:](https://github.com/Carla-de-Beer/Web-Technologies/tree/master/Web%20Components) Web Components.
 * [Webpack:](https://github.com/Carla-de-Beer/Web-Technologies/tree/master/Webpack) A simple Webpack project.
