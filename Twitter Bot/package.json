@@ -1,18 +1,15 @@
 {
-  "name": "npm_demo",
+  "name": "twitter-bot",
   "version": "1.0.0",
-  "description": "I am demonstrating npm",
+  "description": "Twitter Bot",
   "main": "bot.js",
+  "dependencies": {
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node bot.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "rainbow"
-  ],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "twit": "^2.2.4"
-  }
+  "author": "cadebe",
+  "license": "ISC"
 }
