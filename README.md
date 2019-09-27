@@ -7,6 +7,7 @@ Various web development projects using different types of web technologies.
 
 The following is a list of the projects included in this repository:
 
+* [Microdata:](https://github.com/Carla-de-Beer/Web-Technologies/tree/master/Microdata) Microdata example.
 * [Polymer Components:](https://github.com/Carla-de-Beer/Web-Technologies/tree/master/Polymer%20Components) Polymer Components.
 * [Progressive Web Application:](https://github.com/Carla-de-Beer/Web-Technologies/tree/master/Progressive%20Web%20Application) Progressive Web Application.
 * [React Components:](https://github.com/Carla-de-Beer/Web-Technologies/tree/master/React%20Components) React Components.
