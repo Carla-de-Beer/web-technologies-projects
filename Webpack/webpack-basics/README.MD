@@ -2,9 +2,9 @@
 
 A simple Webpack project based on Maximillian Schwarzmüller's online Webpack video tutorials called: 
 
-* [*WHAT IS WEBPACK, HOW DOES IT WORK?*](https://www.youtube.com/watch?v=GU-2T7k9NfI)
-* [*USING THE WEBPACK DEV SERVER*](https://www.youtube.com/watch?v=HNRt0lODCQM)
-* [*THE WEBPACK CORE CONCEPTS*](https://www.youtube.com/watch?v=8DDVr6wjJzQ)
+* [*What is Webpack, how does it work?*](https://www.youtube.com/watch?v=GU-2T7k9NfI)
+* [*Using the Webpack dev server*](https://www.youtube.com/watch?v=HNRt0lODCQM)
+* [*Webpack core concepts*](https://www.youtube.com/watch?v=8DDVr6wjJzQ)
 
 The original Webpack 2 project was modified to work with Webpack 4.
 
