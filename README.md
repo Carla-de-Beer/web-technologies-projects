@@ -14,5 +14,4 @@ The following is a list of the projects included in this repository:
 * [Microdata Demo:](https://github.com/Carla-de-Beer/web-technologies-projects/tree/master/html/microdata-demo) An HTML microdata demo.
 * [Progressive Web Demo:](https://github.com/Carla-de-Beer/Web-Technologies-Projects/tree/master/progressive-web-demo) Progressive Web Application.
 * [RxJS Demo:](https://github.com/Carla-de-Beer/web-technologies-projects/tree/master/rxjs-demo) RxJS examples.
-* [Twitter Bot:](https://github.com/Carla-de-Beer/Web-Technologies-Projects/tree/master/twitter-bot) Twitter Bot.
 * [Webpack Demos:](hhttps://github.com/Carla-de-Beer/web-technologies-projects/tree/master/webpack-demos) A simple Webpack project.
