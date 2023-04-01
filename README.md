@@ -7,11 +7,7 @@ Various web development projects using different types of web technologies.
 
 The following is a list of the projects included in this repository:
 
-* [NgRx:](https://github.com/Carla-de-Beer/web-technologies-projects/tree/master/angular/ngrx-demo) Angular Ngrx demo.
-* [Components:](https://github.com/Carla-de-Beer/web-technologies-projects/tree/master/components) Various component options in web development.
-	* [React Components:](https://github.com/Carla-de-Beer/web-technologies-projects/tree/master/components/react-components) React Components.
-	* [Web Components:](https://github.com/Carla-de-Beer/web-technologies-projects/tree/master/components/web-components) Web Components.
+* [Angular:](https://github.com/Carla-de-Beer/web-technologies-projects/tree/master/angular) Angular.
+	* [NgRx:](https://github.com/Carla-de-Beer/web-technologies-projects/tree/master/angular/ngrx-demo) An Ngrx demo based on an Angular project.
 * [Microdata Demo:](https://github.com/Carla-de-Beer/web-technologies-projects/tree/master/html/microdata-demo) An HTML microdata demo.
 * [Progressive Web Demo:](https://github.com/Carla-de-Beer/Web-Technologies-Projects/tree/master/progressive-web-demo) Progressive Web Application.
-* [RxJS Demo:](https://github.com/Carla-de-Beer/web-technologies-projects/tree/master/rxjs-demo) RxJS examples.
-* [Webpack Demos:](hhttps://github.com/Carla-de-Beer/web-technologies-projects/tree/master/webpack-demos) A simple Webpack project.
